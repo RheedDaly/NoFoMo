@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mp.theme.dark_blue.background"
+    android:orientation="vertical">
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/imageViewPosts"-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_toRightOf="@+id/imageViewProfilePic" />-->
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posts"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="end"
+            android:divider="@drawable/common_divider_large_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end"
+            tools:showIn="@layout/activity_main">
+
+            <RadioButton
+                android:id="@+id/radioButtonPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/selector_main_nav_play_list"
+                tools:button="@drawable/ic_main_nav_play_list_selected"
+                tools:checked="true" />
+
+
+            <RadioButton
+                android:id="@+id/radioButtonPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/selector_main_nav_music"
+                tools:button="@drawable/ic_main_nav_music" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/selector_main_nav_music"
+                tools:button="@drawable/ic_main_nav_music" />
+
+            <RadioButton
+                android:id="@+id/radioButtonVideos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/selector_main_nav_music"
+                tools:button="@drawable/ic_main_nav_music" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/selector_main_nav_settings"
+                tools:button="@drawable/ic_main_nav_settings" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLiveEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/selector_main_nav_settings"
+                tools:button="@drawable/ic_main_nav_settings" />
+        </RadioGroup>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ListView
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

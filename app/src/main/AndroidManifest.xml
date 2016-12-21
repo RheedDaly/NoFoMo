@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thetechaupair.nofomo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PostsActivity">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.POSTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FollowersActivity"
+            android:label="@string/followers_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.FOLLOWERSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EventsActivity">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.EVENTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LiveEventsActivity">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.LIVEEVENTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MusicActivity">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.MUSICACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideosActivity">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIDEOSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BiographyActivity"
+            android:label="@string/biography_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.BIOGRAPHYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PhotosActivity">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.PHOTOSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".followingActivity"
+            android:label="@string/following_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.FOLLOWINGACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewPostActivity"
+            android:label="@string/posts_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIEWPOSTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewPhotosActivity"
+            android:label="@string/photos_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIEWPHOTOSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewMusicActivity"
+            android:label="@string/music_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIEWMUSICACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewVideosActivity"
+            android:label="@string/videos_label"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIEWVIDEOSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewEventsActivity"
+            android:label="@string/events_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIEWEVENTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewLiveEventsActivity"
+            android:label="@string/live_events_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.VIEWLIVEEVENTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/profile_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.PROFILEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Player"
+            android:label="@string/profile_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.PLAYERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayListActivity"
+            android:label="@string/profile_label">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.PLAYLISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="com.thetechaupair.nofomo.MAINACTIVITY" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".LogInOrSignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.thetechaupair.nofomo.LOGINORSIGNUPACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    </application>
+
+</manifest>
